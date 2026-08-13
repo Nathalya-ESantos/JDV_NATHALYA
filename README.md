@@ -31,8 +31,7 @@ Certifique-se de ter instalado em sua máquina:
 
 1. **Clonar o repositório:**
    ```bash
-   git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
-   ```
+   git clone https://github.com/Nathalya-ESantos/JDV_NATHALYA.git
 
 2. **Acessar a pasta do projeto:**
    ```bash
