@@ -1,0 +1,11 @@
+/* Texto do status acima do tabuleiro */
+.status {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Garante que os 3 quadrados da mesma linha fiquem lado a lado */
+.boardRow {
+  display: flex;
+}

@@ -1,0 +1,10 @@
+/* Estilo individual para cada botão do tabuleiro */
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+}
