@@ -1,3 +1,4 @@
+// Componente Quadrado- Renderiza um botão individual do tabuleiro que exibe 'X', 'O' ou fica vazio.
 import styles from './Square.module.css';
 
 // O Square é apenas um botão simples

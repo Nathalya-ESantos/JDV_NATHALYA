@@ -1,3 +1,4 @@
+//Componente Modo de Jogo- Controla a seleção das regras da partida (ex: Modo Livre ou com Limites).
 import styles from './GameMode.module.css';
 
 // Componente responsável por permitir a escolha do limite de rodadas

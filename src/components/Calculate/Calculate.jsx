@@ -1,4 +1,4 @@
-// Função auxiliar pura para verificar se existe um vencedor no tabuleiro
+// Função auxiliar para verificar se existe um vencedor no tabuleiro
 export function calculateWinner(squares) {
   // Todas as 8 combinações possíveis de vitória no tabuleiro (3 horizontais, 3 verticais, 2 diagonais)
   const lines = [
