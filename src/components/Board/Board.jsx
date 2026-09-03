@@ -83,5 +83,5 @@ function calculateWinner(squares) {
     }
   }
   
-  return null; //[cite: 2]
+  return null; 
 }

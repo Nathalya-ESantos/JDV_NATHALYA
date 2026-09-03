@@ -1,13 +1,11 @@
-//Componente Modo de Jogo- Controla a seleção das regras da partida (ex: Modo Livre ou com Limites).
+// Componente Modo de Jogo- Controla as regras, exibe o placar acumulado e o progresso do torneio.
 import styles from './GameMode.module.css';
 
-// Componente responsável por permitir a escolha do limite de rodadas
-export default function GameMode({ maxRounds, onSelectMode, totalGames }) {
+export default function GameMode({ maxRounds, onSelectMode, totalGames, scores, onResetScores }) {
   return (
     <div>
       <label htmlFor="mode-select">Modo de Jogo: </label>
       
-      {/* Menu para escolher o limite de partidas */}
       <select 
         id="mode-select" 
         value={maxRounds} 
@@ -19,7 +17,17 @@ export default function GameMode({ maxRounds, onSelectMode, totalGames }) {
         <option value={30}>Torneio (30 rodadas)</option>
       </select>
 
-      {/* Exibe o progresso caso um modo com limite seja escolhido */}
+      {/* Exibição do Placar */}
+      <div className="mt-2">
+        <p><strong>Placar:</strong> X: {scores.x} | O: {scores.o} | Empates: {scores.draws}</p>
+        
+        {/* Mostra o botão de Zerar Placar APENAS no Modo Livre */}
+        {maxRounds === 0 && (
+          <button onClick={onResetScores}>Zerar Placar</button>
+        )}
+      </div>
+
+      {/* Progresso do Torneio */}
       {maxRounds > 0 && (
         <p>Partidas realizadas: {totalGames} de {maxRounds}</p>
       )}

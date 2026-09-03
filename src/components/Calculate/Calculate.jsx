@@ -26,3 +26,4 @@ export function calculateWinner(squares) {
   return null;
 }
 
+//aplicar css
