@@ -25,3 +25,4 @@ export function calculateWinner(squares) {
   // Se percorreu todas as linhas e ninguém venceu, retorna null
   return null;
 }
+
